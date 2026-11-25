@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="24dp" android:height="24dp" android:viewportWidth="640" android:viewportHeight="640">
+  <!-- Тот же знак, что в иконке приложения: кольцо остатка и ₽. Шторка красит его сама. -->
+  <group android:translateX="-192" android:translateY="-192">
+    <path android:pathData="M361.7,726.6 A262,262 0 1 1 662.3,726.6" android:strokeColor="#FFFFFFFF" android:strokeWidth="60" android:strokeLineCap="round" />
+    <path android:pathData="M456,652 V368" android:strokeColor="#FFFFFFFF" android:strokeWidth="56" />
+    <path android:pathData="M431,393 H546 A63,63 0 0 1 546,519 H404" android:strokeColor="#FFFFFFFF" android:strokeWidth="56" android:strokeLineJoin="round" />
+    <path android:pathData="M404,592 H552" android:strokeColor="#FFFFFFFF" android:strokeWidth="56" />
+  </group>
+</vector>

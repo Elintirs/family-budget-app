@@ -1,0 +1,5 @@
+<resources>
+  <!-- Число в виджете картинкой: система сама покажет нужную по теме. -->
+  <style name="WLightOnly"><item name="android:visibility">visible</item></style>
+  <style name="WDarkOnly"><item name="android:visibility">gone</item></style>
+</resources>

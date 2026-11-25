@@ -1,0 +1,21 @@
+<resources>
+  <color name="w_bg">#1A1F26</color>
+  <color name="w_ink">#ECEFF3</color>
+  <color name="w_muted">#9AA4B1</color>
+  <color name="w_accent">#5FD3A2</color>
+  <color name="w_track">#2A313B</color>
+  <color name="w_warn">#F08A4B</color>
+  <color name="w_warn_soft">#3A2A20</color>
+  <color name="w_btn">#ECEFF3</color>
+  <color name="w_btn_ink">#14181F</color>
+  <color name="w_btn2">#252C35</color>
+  <color name="w_hero">#1E2A27</color>
+  <color name="w_hero_ink">#FFFFFF</color>
+  <color name="w_hero_muted">#A9B4B0</color>
+  <color name="w_hero_accent">#7FE0B5</color>
+  <color name="w_hero_track">#33403C</color>
+  <color name="w_hero_warn">#F6A06B</color>
+  <color name="n_primary">#5FD3A2</color>
+  <color name="n_primary_ink">#0F1216</color>
+  <color name="n_pill">#2A313B</color>
+</resources>

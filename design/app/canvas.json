@@ -1,0 +1,704 @@
+{
+  "v": 3,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-11-04T11:00:17Z"
+  },
+  "title": "Семейный бюджет: макет 0.3.14",
+  "launch": {
+    "view": "canvas",
+    "page": "main"
+  },
+  "pages": [
+    {
+      "id": "onb",
+      "name": "Первый запуск"
+    },
+    {
+      "id": "main",
+      "name": "Основные экраны"
+    },
+    {
+      "id": "ops",
+      "name": "Операции"
+    },
+    {
+      "id": "acc",
+      "name": "Счета, аналитика, долги"
+    },
+    {
+      "id": "set",
+      "name": "Настройки"
+    },
+    {
+      "id": "native",
+      "name": "Шторка и виджеты"
+    },
+    {
+      "id": "dark",
+      "name": "Тёмная тема"
+    }
+  ],
+  "boards": {
+    "OnbWelcome.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "0. Приветствие",
+      "page": "onb",
+      "is_interactive": true
+    },
+    "OnbConnect.dc.html": {
+      "x": 470,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "1. Подключи таблицу",
+      "page": "onb",
+      "is_interactive": true
+    },
+    "OnbAccess.dc.html": {
+      "x": 940,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "2. Доступ к уведомлениям",
+      "page": "onb",
+      "is_interactive": true
+    },
+    "OnbPermissions.dc.html": {
+      "x": 1410,
+      "y": 0,
+      "w": 390,
+      "h": 858,
+      "title": "3. Чтобы ничего не терялось",
+      "page": "onb",
+      "is_interactive": true
+    },
+    "OnbHowTo.dc.html": {
+      "x": 1880,
+      "y": 0,
+      "w": 390,
+      "h": 1465,
+      "title": "4. Как пользоваться",
+      "page": "onb",
+      "is_interactive": true
+    },
+    "Main.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 1566,
+      "title": "Главная",
+      "page": "main",
+      "is_interactive": true
+    },
+    "MainAlerts.dc.html": {
+      "x": 470,
+      "y": 0,
+      "w": 390,
+      "h": 1357,
+      "title": "Главная: все плашки",
+      "page": "main",
+      "is_interactive": true
+    },
+    "MainNegative.dc.html": {
+      "x": 940,
+      "y": 0,
+      "w": 390,
+      "h": 880,
+      "title": "Главная: счёт в минусе",
+      "page": "main",
+      "is_interactive": true
+    },
+    "Inbox.dc.html": {
+      "x": 1410,
+      "y": 0,
+      "w": 390,
+      "h": 1412,
+      "title": "Входящие",
+      "page": "main",
+      "is_interactive": true
+    },
+    "InboxStates.dc.html": {
+      "x": 1880,
+      "y": 0,
+      "w": 390,
+      "h": 1406,
+      "title": "Входящие: вопросы к покупке",
+      "page": "main",
+      "is_interactive": true
+    },
+    "InboxEmpty.dc.html": {
+      "x": 2350,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Входящие: всё разобрано",
+      "page": "main",
+      "is_interactive": true
+    },
+    "Add.dc.html": {
+      "x": 2820,
+      "y": 0,
+      "w": 390,
+      "h": 1141,
+      "title": "Добавить: расход",
+      "page": "main",
+      "is_interactive": true
+    },
+    "Analytics.dc.html": {
+      "x": 3290,
+      "y": 0,
+      "w": 390,
+      "h": 1891,
+      "title": "Аналитика: текущий месяц",
+      "page": "main",
+      "is_interactive": true
+    },
+    "Settings.dc.html": {
+      "x": 3760,
+      "y": 0,
+      "w": 390,
+      "h": 2324,
+      "title": "Настройки",
+      "page": "main",
+      "is_interactive": true
+    },
+    "AddIncome.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 853,
+      "title": "Добавить: доход",
+      "page": "ops",
+      "is_interactive": true
+    },
+    "AddTransfer.dc.html": {
+      "x": 470,
+      "y": 0,
+      "w": 390,
+      "h": 985,
+      "title": "Добавить: перевод",
+      "page": "ops",
+      "is_interactive": true
+    },
+    "Overdraft.dc.html": {
+      "x": 940,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Вопрос: счёт уйдёт в минус",
+      "page": "ops",
+      "is_interactive": true
+    },
+    "Pick.dc.html": {
+      "x": 1410,
+      "y": 0,
+      "w": 390,
+      "h": 1191,
+      "title": "Выбор подкатегории",
+      "page": "ops",
+      "is_interactive": true
+    },
+    "SyncResult.dc.html": {
+      "x": 1880,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Результат отправки",
+      "page": "ops",
+      "is_interactive": true
+    },
+    "SyncFailed.dc.html": {
+      "x": 2350,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Отправка не удалась",
+      "page": "ops",
+      "is_interactive": true
+    },
+    "History.dc.html": {
+      "x": 2820,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "История",
+      "page": "ops",
+      "is_interactive": true
+    },
+    "Operation.dc.html": {
+      "x": 3290,
+      "y": 0,
+      "w": 390,
+      "h": 1554,
+      "title": "Операция: новая",
+      "page": "ops",
+      "is_interactive": true
+    },
+    "OperationSynced.dc.html": {
+      "x": 3760,
+      "y": 0,
+      "w": 390,
+      "h": 1603,
+      "title": "Операция в таблице: правка суммы",
+      "page": "ops",
+      "is_interactive": true
+    },
+    "OperationTransfer.dc.html": {
+      "x": 4230,
+      "y": 0,
+      "w": 390,
+      "h": 1404,
+      "title": "Операция: доход стал переводом",
+      "page": "ops",
+      "is_interactive": true
+    },
+    "OperationFix.dc.html": {
+      "x": 4700,
+      "y": 0,
+      "w": 390,
+      "h": 846,
+      "title": "Операция: поправка по сверке",
+      "page": "ops",
+      "is_interactive": true
+    },
+    "OperationSplit.dc.html": {
+      "x": 5170,
+      "y": 0,
+      "w": 390,
+      "h": 1086,
+      "title": "Разделить покупку",
+      "page": "ops",
+      "is_interactive": true
+    },
+    "Account.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 2391,
+      "title": "Счёт: расхождение и лента сверки",
+      "page": "acc",
+      "is_interactive": true
+    },
+    "AccountCredit.dc.html": {
+      "x": 470,
+      "y": 0,
+      "w": 390,
+      "h": 1461,
+      "title": "Счёт: кредитка",
+      "page": "acc",
+      "is_interactive": true
+    },
+    "AccountOwed.dc.html": {
+      "x": 940,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Счёт: «Нам должны»",
+      "page": "acc",
+      "is_interactive": true
+    },
+    "Reconcile.dc.html": {
+      "x": 1410,
+      "y": 0,
+      "w": 390,
+      "h": 1219,
+      "title": "Сверка: разница и подсказки",
+      "page": "acc",
+      "is_interactive": true
+    },
+    "ReconcileOk.dc.html": {
+      "x": 1880,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Сверка: сходится",
+      "page": "acc",
+      "is_interactive": true
+    },
+    "AnalyticsPast.dc.html": {
+      "x": 2350,
+      "y": 0,
+      "w": 390,
+      "h": 960,
+      "title": "Аналитика: прошлый месяц и прогноз",
+      "page": "acc",
+      "is_interactive": true
+    },
+    "AnalyticsYear.dc.html": {
+      "x": 2820,
+      "y": 0,
+      "w": 390,
+      "h": 854,
+      "title": "Аналитика: год",
+      "page": "acc",
+      "is_interactive": true
+    },
+    "Category.dc.html": {
+      "x": 3290,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Подкатегория",
+      "page": "acc",
+      "is_interactive": true
+    },
+    "MonthSummary.dc.html": {
+      "x": 3760,
+      "y": 0,
+      "w": 390,
+      "h": 965,
+      "title": "Итоги месяца",
+      "page": "acc",
+      "is_interactive": true
+    },
+    "Debts.dc.html": {
+      "x": 4230,
+      "y": 0,
+      "w": 390,
+      "h": 981,
+      "title": "Долги",
+      "page": "acc",
+      "is_interactive": true
+    },
+    "Goals.dc.html": {
+      "x": 4700,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Цели",
+      "page": "acc",
+      "is_interactive": true
+    },
+    "GoalEdit.dc.html": {
+      "x": 5170,
+      "y": 0,
+      "w": 390,
+      "h": 942,
+      "title": "Новая цель",
+      "page": "acc",
+      "is_interactive": true
+    },
+    "Limits.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 1074,
+      "title": "Лимиты",
+      "page": "set",
+      "is_interactive": true
+    },
+    "LimitEdit.dc.html": {
+      "x": 470,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Лист: лимит",
+      "page": "set",
+      "is_interactive": true
+    },
+    "Recurring.dc.html": {
+      "x": 940,
+      "y": 0,
+      "w": 390,
+      "h": 1008,
+      "title": "Регулярные платежи",
+      "page": "set",
+      "is_interactive": true
+    },
+    "RecurringEdit.dc.html": {
+      "x": 1410,
+      "y": 0,
+      "w": 390,
+      "h": 1364,
+      "title": "Регулярный платёж: правка",
+      "page": "set",
+      "is_interactive": true
+    },
+    "Subcategories.dc.html": {
+      "x": 1880,
+      "y": 0,
+      "w": 390,
+      "h": 1520,
+      "title": "Подкатегории",
+      "page": "set",
+      "is_interactive": true
+    },
+    "Rules.dc.html": {
+      "x": 2350,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Правила категорий",
+      "page": "set",
+      "is_interactive": true
+    },
+    "Sources.dc.html": {
+      "x": 2820,
+      "y": 0,
+      "w": 390,
+      "h": 1570,
+      "title": "Источники",
+      "page": "set",
+      "is_interactive": true
+    },
+    "Devices.dc.html": {
+      "x": 3290,
+      "y": 0,
+      "w": 390,
+      "h": 1070,
+      "title": "Устройство",
+      "page": "set",
+      "is_interactive": true
+    },
+    "DebugLog.dc.html": {
+      "x": 3760,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Журнал для разработчика",
+      "page": "set",
+      "is_interactive": true
+    },
+    "Notification.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Уведомление после покупки",
+      "page": "native",
+      "is_interactive": true
+    },
+    "StatusNotifs.dc.html": {
+      "x": 470,
+      "y": 0,
+      "w": 390,
+      "h": 1256,
+      "title": "Закреплённое и напоминания",
+      "page": "native",
+      "is_interactive": true
+    },
+    "Widgets.dc.html": {
+      "x": 940,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Виджеты",
+      "page": "native",
+      "is_interactive": true
+    },
+    "MainDark.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 1566,
+      "title": "Главная",
+      "page": "dark",
+      "is_interactive": true
+    },
+    "InboxDark.dc.html": {
+      "x": 470,
+      "y": 0,
+      "w": 390,
+      "h": 1412,
+      "title": "Входящие",
+      "page": "dark",
+      "is_interactive": true
+    },
+    "AddDark.dc.html": {
+      "x": 940,
+      "y": 0,
+      "w": 390,
+      "h": 1141,
+      "title": "Добавить: расход",
+      "page": "dark",
+      "is_interactive": true
+    },
+    "AnalyticsDark.dc.html": {
+      "x": 1410,
+      "y": 0,
+      "w": 390,
+      "h": 1891,
+      "title": "Аналитика: текущий месяц",
+      "page": "dark",
+      "is_interactive": true
+    },
+    "OperationSyncedDark.dc.html": {
+      "x": 1880,
+      "y": 0,
+      "w": 390,
+      "h": 1603,
+      "title": "Операция в таблице: правка суммы",
+      "page": "dark",
+      "is_interactive": true
+    },
+    "SettingsDark.dc.html": {
+      "x": 2350,
+      "y": 0,
+      "w": 390,
+      "h": 2324,
+      "title": "Настройки",
+      "page": "dark",
+      "is_interactive": true
+    },
+    "AccountDark.dc.html": {
+      "x": 2820,
+      "y": 0,
+      "w": 390,
+      "h": 2391,
+      "title": "Счёт: расхождение и лента сверки",
+      "page": "dark",
+      "is_interactive": true
+    },
+    "WidgetsDark.dc.html": {
+      "x": 3290,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Виджеты",
+      "page": "dark",
+      "is_interactive": true
+    },
+    "NotificationDark.dc.html": {
+      "x": 3760,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Уведомление после покупки",
+      "page": "dark",
+      "is_interactive": true
+    }
+  },
+  "order": [
+    "OnbWelcome.dc.html",
+    "OnbConnect.dc.html",
+    "OnbAccess.dc.html",
+    "OnbPermissions.dc.html",
+    "OnbHowTo.dc.html",
+    "Main.dc.html",
+    "MainAlerts.dc.html",
+    "MainNegative.dc.html",
+    "Inbox.dc.html",
+    "InboxStates.dc.html",
+    "InboxEmpty.dc.html",
+    "Add.dc.html",
+    "Analytics.dc.html",
+    "Settings.dc.html",
+    "AddIncome.dc.html",
+    "AddTransfer.dc.html",
+    "Overdraft.dc.html",
+    "Pick.dc.html",
+    "SyncResult.dc.html",
+    "SyncFailed.dc.html",
+    "History.dc.html",
+    "Operation.dc.html",
+    "OperationSynced.dc.html",
+    "OperationTransfer.dc.html",
+    "OperationFix.dc.html",
+    "OperationSplit.dc.html",
+    "Account.dc.html",
+    "AccountCredit.dc.html",
+    "AccountOwed.dc.html",
+    "Reconcile.dc.html",
+    "ReconcileOk.dc.html",
+    "AnalyticsPast.dc.html",
+    "AnalyticsYear.dc.html",
+    "Category.dc.html",
+    "MonthSummary.dc.html",
+    "Debts.dc.html",
+    "Goals.dc.html",
+    "GoalEdit.dc.html",
+    "Limits.dc.html",
+    "LimitEdit.dc.html",
+    "Recurring.dc.html",
+    "RecurringEdit.dc.html",
+    "Subcategories.dc.html",
+    "Rules.dc.html",
+    "Sources.dc.html",
+    "Devices.dc.html",
+    "DebugLog.dc.html",
+    "Notification.dc.html",
+    "StatusNotifs.dc.html",
+    "Widgets.dc.html",
+    "MainDark.dc.html",
+    "InboxDark.dc.html",
+    "AddDark.dc.html",
+    "AnalyticsDark.dc.html",
+    "OperationSyncedDark.dc.html",
+    "SettingsDark.dc.html",
+    "AccountDark.dc.html",
+    "WidgetsDark.dc.html",
+    "NotificationDark.dc.html"
+  ],
+  "notes": {
+    "t_onb": {
+      "x": 0,
+      "y": -300,
+      "text": "Первый запуск",
+      "kind": "title1",
+      "maxW": 2270,
+      "page": "onb"
+    },
+    "t_main": {
+      "x": 0,
+      "y": -300,
+      "text": "Основные экраны",
+      "kind": "title1",
+      "maxW": 4150,
+      "page": "main"
+    },
+    "t_ops": {
+      "x": 0,
+      "y": -300,
+      "text": "Операции",
+      "kind": "title1",
+      "maxW": 5560,
+      "page": "ops"
+    },
+    "t_acc": {
+      "x": 0,
+      "y": -300,
+      "text": "Счета, аналитика, долги",
+      "kind": "title1",
+      "maxW": 5560,
+      "page": "acc"
+    },
+    "t_set": {
+      "x": 0,
+      "y": -300,
+      "text": "Настройки",
+      "kind": "title1",
+      "maxW": 4150,
+      "page": "set"
+    },
+    "t_native": {
+      "x": 0,
+      "y": -300,
+      "text": "Шторка и виджеты",
+      "kind": "title1",
+      "maxW": 1330,
+      "page": "native"
+    },
+    "t_dark": {
+      "x": 0,
+      "y": -300,
+      "text": "Тёмная тема",
+      "kind": "title1",
+      "maxW": 4150,
+      "page": "dark"
+    },
+    "ver": {
+      "x": 0,
+      "y": -140,
+      "w": 520,
+      "text": "Собрано из кода версии 0.3.14 (коммит 661ad8d). Суммы условные, тексты и состояния настоящие. Экран с несколькими плашками показывает их вместе, в приложении они появляются по условиям.",
+      "size": "s",
+      "page": "main",
+      "fill": "gray"
+    }
+  },
+  "designSystems": []
+}

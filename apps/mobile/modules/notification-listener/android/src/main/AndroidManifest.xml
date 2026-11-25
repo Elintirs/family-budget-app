@@ -1,0 +1,70 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+  <!-- «Держать в памяти»: фоновая служба с закреплённым уведомлением. -->
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+  <!-- Сторож поднимает слушатель и службу после перезагрузки. -->
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+  <!-- Android 11+: без этого не узнать, установлено ли приложение банка. -->
+  <queries>
+    <package android:name="com.idamob.tinkoff.android" />
+    <package android:name="ru.sberbankmobile" />
+    <package android:name="ru.vtb24.mobilebanking.android" />
+    <package android:name="ru.alfabank.mobile.android" />
+    <package android:name="ru.ozon.fintech.finance" />
+    <package android:name="ru.ozon.app.android" />
+    <package android:name="com.yandex.bank" />
+    <package android:name="ru.gazprombank.android.mobilebank.app" />
+    <package android:name="ru.raiffeisennews" />
+    <package android:name="ru.nspk.mirpay" />
+  </queries>
+
+  <application>
+    <service
+      android:name="expo.modules.notificationlistener.BudgetNotificationListener"
+      android:label="Бюджет: уведомления банков"
+      android:exported="false"
+      android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+      <intent-filter>
+        <action android:name="android.service.notification.NotificationListenerService" />
+      </intent-filter>
+    </service>
+    <service
+      android:name="expo.modules.notificationlistener.KeepAliveService"
+      android:exported="false"
+      android:foregroundServiceType="specialUse">
+      <property
+        android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+        android:value="Учёт покупок из уведомлений банков: процесс слушателя уведомлений не выгружается" />
+    </service>
+    <receiver android:name="expo.modules.notificationlistener.WatchdogReceiver" android:exported="false">
+      <intent-filter>
+        <action android:name="ru.familybudget.WATCHDOG" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+        <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+      </intent-filter>
+    </receiver>
+    <receiver android:name="expo.modules.notificationlistener.QuickActionReceiver" android:exported="false">
+      <intent-filter>
+        <action android:name="ru.familybudget.QUICK_CATEGORY" />
+      </intent-filter>
+    </receiver>
+
+    <receiver android:name="expo.modules.notificationlistener.BudgetWidgetLarge" android:label="Бюджет: можно сегодня" android:exported="false">
+      <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+      <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_large_info" />
+    </receiver>
+    <receiver android:name="expo.modules.notificationlistener.BudgetWidgetToday" android:label="Бюджет: сегодня" android:exported="false">
+      <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+      <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_today_info" />
+    </receiver>
+    <receiver android:name="expo.modules.notificationlistener.BudgetWidgetMoney" android:label="Бюджет: на счетах" android:exported="false">
+      <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+      <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_small_info" />
+    </receiver>
+  </application>
+</manifest>

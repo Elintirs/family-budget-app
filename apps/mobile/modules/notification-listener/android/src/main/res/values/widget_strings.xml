@@ -1,0 +1,5 @@
+<resources>
+  <string name="w_large_desc">Сколько можно потратить сегодня, сколько уже потрачено и остаток на месяц, кнопки «+ Трата» и «Входящие»</string>
+  <string name="w_today_desc">Сколько можно потратить сегодня и сколько уже потрачено</string>
+  <string name="w_money_desc">Деньги на счетах и долг по кредиткам</string>
+</resources>

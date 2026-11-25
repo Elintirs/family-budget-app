@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/w_root" android:layout_width="match_parent" android:layout_height="match_parent"
+  android:orientation="vertical" android:padding="16dp" android:background="@drawable/w_bg">
+  <TextView android:id="@+id/w_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Бюджет"
+    android:textStyle="bold" android:textColor="@color/w_muted" android:textSize="13sp" android:maxLines="1" />
+  <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+  <FrameLayout android:layout_width="match_parent" android:layout_height="34dp">
+    <ImageView android:id="@+id/w_num_light" style="@style/WLightOnly" android:layout_width="match_parent" android:layout_height="match_parent"
+      android:scaleType="fitStart" android:contentDescription="Сумма" />
+    <ImageView android:id="@+id/w_num_dark" style="@style/WDarkOnly" android:layout_width="match_parent" android:layout_height="match_parent"
+      android:scaleType="fitStart" android:contentDescription="Сумма" />
+  </FrameLayout>
+  <FrameLayout android:id="@+id/w_bars" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+    <ProgressBar android:id="@+id/w_progress" style="@android:style/Widget.ProgressBar.Horizontal" android:layout_width="match_parent"
+      android:layout_height="6dp" android:max="100" android:progressDrawable="@drawable/w_bar" />
+    <ProgressBar android:id="@+id/w_progress_over" style="@android:style/Widget.ProgressBar.Horizontal" android:layout_width="match_parent"
+      android:layout_height="6dp" android:max="100" android:progressDrawable="@drawable/w_bar_over"  android:visibility="gone" />
+  </FrameLayout>
+  <TextView android:id="@+id/w_caption" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:textStyle="bold" android:textColor="@color/w_warn" android:textSize="12sp" android:maxLines="2" />
+</LinearLayout>
